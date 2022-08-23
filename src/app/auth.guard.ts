@@ -13,7 +13,7 @@ export class AuthGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if (this.productService.products.length > 3) {
+    if (this.productService.products.length > 2) {
       return true;
     } else {
       return false

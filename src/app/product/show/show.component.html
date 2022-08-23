@@ -9,7 +9,7 @@
         </ul>
       </div>
       <div class="featured__item__text">
-        <h6><a href="#">{{p.name}}</a></h6>
+        <h6><a [routerLink]="'/edit/'+ p.id">{{p.name}}</a></h6>
         <h5>{{p.price}}</h5>
         <h5 *ngIf="p.status" style="color: #3CC032">Còn hàng</h5>
         <h5 *ngIf="!p.status" style="color: red">Hết hàng</h5>
